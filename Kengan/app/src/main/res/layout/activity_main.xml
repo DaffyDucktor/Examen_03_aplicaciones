@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/primary"
+    >
+
+    <include
+        layout="@layout/custom_toolbar"
+        android:id="@+id/toolbar"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <ImageButton
+            android:id="@+id/support_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_baseline_support_24"
+            app:iconTint="?android:textColor"
+            android:text="Support"
+            android:textColor="?android:textColor"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_support_24"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:padding="5dp"
+            tools:listitem="@layout/photo_file"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
